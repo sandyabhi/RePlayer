@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.player{
+    display: block;
+    background-color: rgb(231, 231, 231);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.player > h3 {
+   font-weight: 1000;
+   text-align: center;
+   font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.player > p {
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playerdet .detimg{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
 }
+
+.playerdet .detimg img{
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 5px;
+}
+
+.playerdet > h3{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.playerdet > h4{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ctrl{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
